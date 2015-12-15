@@ -35,12 +35,15 @@ pem accepts optional options and callback, see tables below for all possibilitie
 |PEM Option |Example|Description|Command Executed|
 |-------------|-------|-----------|----------------|
 | identifier(string)  | {identifier:'myapp'} | The bundle identifier of your app | -a {identifier} |
-| output(string)      | { output: outputDirectoryPath } | generates the pem profile in a specific directory | -e {outputDirectoryPath} |                                                                                                                  | user (string)       |  { user:username } | Your Apple ID Username | -u {user} |
-| p12Password(string)      | { p12Password: 'password' } | The password that is used for your p12 file  | -p {p12Password} |                                                                                                                  | pemName (string)       |  { pemName:'filename' } | The file name of the generated .pem file | -o {pemName} |  
+| output(string)      | { output: outputDirectoryPath } | generates the pem profile in a specific directory | -e {outputDirectoryPath} |  
+| user (string)       |  { user:username } | Your Apple ID Username | -u {user} |
+| p12Password(string)      | { p12Password: 'password' } | The password that is used for your p12 file  | -p {p12Password} |
+| pemName (string) |  { pemName:'filename' } | The file name of the generated .pem file | -o {pemName} |  
 | teamId(string) | { teamId:'ekjo' } |   The ID of your team if you're in multiple teams | -b {teamId} |  
 | teamName(string) | { teamName:'teamA' }   | The name of your team if you're in multiple teams | -l {teamName}
 | development(boolean) | { development:true } | Renew the development push certificate instead of the production one | --development |
-| force (boolean)       | { force:true }  | Create a new push certificate, even if the current one is active for 30 more days | --force |                            | generateP12 (boolean) | { generateP12:true }  | Generate a p12 file additionally to a PEM file | --generate_p12 |
+| force (boolean)       | { force:true }  | Create a new push certificate, even if the current one is active for 30 more days | --force |                            
+| generateP12 (boolean) | { generateP12:true }  | Generate a p12 file additionally to a PEM file | --generate_p12 |
 |savePrivateKey (boolean) | { savePrivateKey:true }  | Set to save the private RSA key | --s |                              
 
 ### Runtime Options
