@@ -1,6 +1,6 @@
 {
   "name": "fastlane-pem",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "node wrapper for ruby fastlane pem module",
   "main": "index.js",
   "repository": {
